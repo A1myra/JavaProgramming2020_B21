@@ -38,6 +38,7 @@ public class SingleDimensionalArray {
 
         for(int each:scores){ //each:element
             System.out.println(each);
+
         }
     }
 }
