@@ -15,7 +15,7 @@ public class MethodsWithoutParameters {
 
     //AccessModifier  specifier   returnTYPE   MethodName (Parameter){
     public static void printHello5Times(){
-        for(int i=1; i<=6; i++) {
+        for(int i=1; i<=5; i++) {
             System.out.println("Hello");
         }
     }
