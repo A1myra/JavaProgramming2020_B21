@@ -11,6 +11,11 @@ public class MethodsWithoutParameters {
         printHello5Times();
 
         MethodsWithoutParameters.printHello5Times();
+
+        System.out.print("Odd Numbers: ");
+        MethodsWithoutParameters2.printOddNumbers1To100();
+        System.out.print("Even Numbers: ");
+        MethodsWithoutParameters2.printEvenNumbers1To100();
     }
 
     //AccessModifier  specifier   returnTYPE   MethodName (Parameter){
@@ -18,6 +23,7 @@ public class MethodsWithoutParameters {
         for(int i=1; i<=5; i++) {
             System.out.println("Hello");
         }
+        System.out.println();
     }
 }
 /*    //step1: print hello 5 times  (for loop)
