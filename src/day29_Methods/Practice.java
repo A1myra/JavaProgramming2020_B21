@@ -1,6 +1,6 @@
-package day29;
+package day29_Methods;
 
-public class Task1 {
+public class Practice {
     public static void main(String[] args) {
 
 

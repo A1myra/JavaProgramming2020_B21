@@ -1,4 +1,4 @@
-package day29;
+package day29_Methods;
 
 public class MethodsWithoutParameters {
 
