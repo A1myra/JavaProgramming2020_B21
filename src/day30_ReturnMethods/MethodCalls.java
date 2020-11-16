@@ -29,6 +29,7 @@ public class MethodCalls {
         int[] array = {1,0,-2,30,40,500,-20,-50};
         int[] descending = ArraysUtility.sort(array);
         System.out.println(Arrays.toString(descending));
+        System.out.println(ArraysUtility.printArray(descending));
 
 
     }
