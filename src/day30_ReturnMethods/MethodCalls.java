@@ -31,6 +31,12 @@ public class MethodCalls {
         System.out.println(Arrays.toString(descending));
         System.out.println(ArraysUtility.printArray(descending));
 
+        System.out.println("=========================================");
+
+        String s1 = "cccccccccccbbbbbbbbbaaaaaaaaa";
+        String s2 = "bbbbbbbbbbbbbbbaaaaaaaaaaaccccccc";
+        boolean anagram= StringUtility.isAnagram(s1,s2);
+        System.out.println(anagram);
 
     }
 }

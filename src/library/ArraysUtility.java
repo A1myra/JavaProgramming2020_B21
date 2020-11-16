@@ -67,13 +67,15 @@ public class ArraysUtility {
 
 
     /*
-    replace the [ with { while printing the array
+    replace the [] with {} while printing the array
      */
     public static String printArray(int[] arr){
         String str = Arrays.toString(arr);
         str = str.replace("[","{").replace("]","}");
         return str;
     }
+
+
 
 
 
