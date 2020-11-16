@@ -53,4 +53,19 @@ return result;
     }
 
 
+    public static String frequencyOfCharacters(String str){
+        String result = ""; //a3b4c2
+
+        String nonDup =  StringUtility.removeDuplicates(str);   // a b c
+
+        for(int i =0; i <= nonDup.length()-1; i++) {
+            char ch = nonDup.charAt(i);  //a
+            int count = StringUtility.Frequency(str, ch);   // 3 4 2
+            result += "" + ch + count;
+        }
+
+        return result;
+    }
+
+
 }
