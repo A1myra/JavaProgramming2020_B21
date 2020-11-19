@@ -2,6 +2,13 @@ package day31_MethodOverLoading;
 
 public class MethodOverloading3 {
 
+    public static void main(String[] args) {
+        double[] arr={1.5, 2.5, 3.5, 0, 0.5, 1};
+
+        System.out.println(max(arr));
+        System.out.println(min(arr));
+    }
+
     public static int max(int[] arr){
         int max =arr[0];
         for( int each  : arr ){
