@@ -13,6 +13,14 @@ public class MethodOverloading4 {
         double[] arr2 = { 5.5, 6.5, 10.5, 11.5, 12.5, 3.5, 4.5};
         arr2=sort(arr2);
         System.out.println(Arrays.toString(arr2));
+
+        char[] arr3={'a', 'b', 'c', 'd', 'f'};
+        arr3=sort(arr3);
+        System.out.println(Arrays.toString(arr3));
+
+        String[] arr4={"A","B","C","D","E"};
+        arr4=sort(arr4);
+        System.out.println(Arrays.toString(arr4));
     }
 
     public static int[] sort(int[] arr) {  // {2,1,3}
@@ -56,3 +64,11 @@ public class MethodOverloading4 {
         return reversedArray;
     }
 }
+
+/*
+sort: sorts in descending order
+    int[]
+    double[]
+    char[]
+    String[]
+ */
