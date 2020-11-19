@@ -107,10 +107,28 @@ return result;
 
     /*
     verify if the string palindrome
-
      */
     public static boolean isPalindrome(String str){
         return reverse(str).equalsIgnoreCase(str);
     }
+
+
+/*
+takes a sentence and word, then returns the frequency of teh word
+ */
+    public static int frequencyOfWord(String sentence, String word){
+        sentence = sentence.toLowerCase();
+        word=word.toLowerCase();
+
+        int frequency = 0;
+
+        while(sentence.contains(word)){
+            sentence=sentence.replaceFirst(word,"");
+            frequency++;
+        }
+
+        return frequency;
+    }
+
 
 }
