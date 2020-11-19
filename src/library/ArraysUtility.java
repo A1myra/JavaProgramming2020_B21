@@ -96,6 +96,48 @@ public class ArraysUtility {
     } //sort in descending order
 
 
+    /* /*
+    sorts the array of double in descending order. and returns it as an array
+     */
+    public static double[] sort(double[] arr){
+        Arrays.sort(arr);
+        double[] reversedArray = new double[arr.length];
+
+        for(int i = arr.length-1,  j=0; i>=0; i--, j++){
+            reversedArray[j]=arr[i];
+        }
+        return reversedArray;
+    }
+
+
+     /*
+    sorts the array of char in descending order. and returns it as an array
+     */
+    public static char[] sort(char[] arr){
+        Arrays.sort(arr);
+        char[] reversedArray = new char[arr.length];
+
+        for(int i = arr.length-1,  j=0; i>=0; i--, j++){
+            reversedArray[j]=arr[i];
+        }
+        return reversedArray;
+    }
+
+
+     /*
+    sorts the array of String in descending order. and returns it as an array
+     */
+    public static String[] sort(String[] arr){
+        Arrays.sort(arr);
+        String[] reversedArray = new String[arr.length];
+
+        for(int i = arr.length-1,  j=0; i>=0; i--, j++){
+            reversedArray[j]=arr[i];
+        }
+        return reversedArray;
+    }
+
+
     /*
     replace the [] with {} while printing the array
      */

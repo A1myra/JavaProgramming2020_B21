@@ -4,6 +4,17 @@ import java.util.Arrays;
 
 public class MethodOverloading4 {
 
+    public static void main(String[] args) {
+        int[] arr = { 1,4,3,2,7,0,10,11,9,8};
+
+        arr=sort(arr);
+        System.out.println(Arrays.toString(arr));
+
+        double[] arr2 = { 5.5, 6.5, 10.5, 11.5, 12.5, 3.5, 4.5};
+        arr2=sort(arr2);
+        System.out.println(Arrays.toString(arr2));
+    }
+
     public static int[] sort(int[] arr) {  // {2,1,3}
         Arrays.sort(arr);  // {1,2,3};
         int[] reversedArray = new int[arr.length];  // {3, 2, 1}
