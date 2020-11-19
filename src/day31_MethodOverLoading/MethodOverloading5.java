@@ -23,6 +23,21 @@ public class MethodOverloading5 {
 
         int[] a4=combineTwoArrays( combineTwoArrays(a1,a2),a3);
         System.out.println(Arrays.toString(a4));
+
+        String[] group19 = {"Meredith", "Khrystyna", "Nikola", "Mariana", "Viktoriya"};
+        String [] group5 = {"Maryam", "Hurshid", "Duane", "Halisa", "Alimu"};
+        String[] group6 = {"Natalie","Gulistan","Dragisa","Sladjan","Omer", "Alex","Abiel","Marina"};
+        String[] group30 = {"Halzat", "Serhii", "Karlygash", "Polina", "Aisha"};
+        String[] group31 = {"Livio", "Steph", "Dan","Sobir","Atala", "Yusef","Saafir"};
+        String[]group3={"Asel","Rauf","Ibrahim","Erhan","Halil","Hanieh","Ruzanna","Jiamila","Jimell","Sofia","Yilihamu","Nueraihemaiti"};
+
+        String[]group19And5=combineTwoArrays(group19,group5);
+        String[]group6And30=combineTwoArrays(group6,group30);
+        String[]group31And3=combineTwoArrays(group31,group3);
+
+        String[] cybertek = combineTwoArrays(  combineTwoArrays(group19And5,group6And30),group31And3);
+        System.out.println(Arrays.toString(cybertek));
+
     }
 
     public static int[] combineTwoArrays(int[] arr1, int[] arr2){
