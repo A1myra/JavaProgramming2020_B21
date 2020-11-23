@@ -13,7 +13,6 @@ public class Overloading {
     }
 
     public static void main(double[] args) {
-
         System.out.println("double");
     }
 
