@@ -18,5 +18,8 @@ public class ValueOfMethods {
         String s3 = "TRUE"; // if I give other anything than true, it will always return false
         boolean r1 = Boolean.valueOf(s3); //unboxing
         System.out.println(r1);
+
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
     }
 }
