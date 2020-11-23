@@ -138,8 +138,6 @@ public class ArraysUtility {
     }
 
 
-
-
     /*
     sorts the array of integers in descending order. and returns it as an array
      */
@@ -208,7 +206,7 @@ public class ArraysUtility {
 
 
     /*
-    adds element to the integer array
+        adds element to the integer array
      */
     public static int[] addElement(int[] array, int element){
         int[] result = new int[array.length + 1];
@@ -224,7 +222,7 @@ public class ArraysUtility {
 
 
     /*
-    adds element to the double array
+        adds element to the double array
      */
     public static double[] addElement(double[] array, double element){
         double[] result = new double[array.length + 1];
