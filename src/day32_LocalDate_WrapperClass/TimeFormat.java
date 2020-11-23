@@ -56,5 +56,43 @@ public class TimeFormat {
         System.out.println(r1);
         System.out.println(r2);
 
+        //calculate the age
+        //2020-11-23 2020
+        int currentYear = LocalDate.now().getYear();
+        LocalDate DofB =LocalDate.of(1999,2,23);
+
+        int age = currentYear-DofB.getYear();
+
+        System.out.println(age);
+
+        System.out.println(DofB.plusDays(10)); //生日加上10天
+
+        LocalDate rightNow = LocalDate.now();
+        LocalDate holidayBreak= rightNow.plusDays(2);
+        System.out.println(holidayBreak);
+
+
+        LocalTime time = LocalTime.now();
+        LocalTime lunchBreak = time.plusMinutes(15);
+
+        System.out.println(lunchBreak.format(tf));
+
+
+        System.out.println("===========================================");
+
+        LocalTime classStarts = LocalTime.of(10,0);
+        LocalTime firstBreak = classStarts.plusMinutes(45);
+        System.out.println(firstBreak);
+
+        LocalTime secondBreak = firstBreak.plusHours(1);
+        System.out.println(secondBreak);
+
+        LocalTime thirdBreak = secondBreak.plusHours(1).plusMinutes(15);
+        System.out.println(thirdBreak);
+
+        LocalTime afternoonClass = thirdBreak.plusHours(1);
+        System.out.println(afternoonClass);
+
+
     }
 }
