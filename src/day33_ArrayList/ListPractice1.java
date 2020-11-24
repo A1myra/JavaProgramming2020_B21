@@ -39,6 +39,7 @@ public class ListPractice1 {
                 List1.add(eachElement);
             }
         }
+
        /* 下面的简单 上面的recommended
        for( int each: arr1){
             List1.add(each); //[1,2,3,4,5,6]
@@ -48,7 +49,6 @@ public class ListPractice1 {
         }
 
          */
-
 
         System.out.println(List1); //[1,2,3,4,5,6,1,2,3,4,5,6,7,8,9,10]
     }
