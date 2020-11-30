@@ -47,11 +47,24 @@ public class SimpleLambdaExpressions {
         System.out.println("========================================================");
 
         ArrayList<String>employee2 = new ArrayList<>();
-        employee2.addAll(Arrays.asList("Ahmed","Ahmed","Almira","Ahmed","Ahmed","Rinat","Ahmed"));
+        employee2.addAll(Arrays.asList("Ahmed","Ahmed","Almira","Ahmed","Ahmed","Rinat","Ahmed","Adil"));
+        System.out.println(employee2);
 
-        employee2.removeIf(p -> p.contains("A"));
+        employee2.removeIf(p -> p.startsWith("A") && !p.equals("Ahmed"));
+        //remove all names starts with A but Ahmed.
             System.out.println(employee2);
-        }
+
+        System.out.println("========================================================");
+        ArrayList<String>employee3 = new ArrayList<>();
+        employee3.addAll(Arrays.asList("Ahmed","Ahmed","Almira","Ahmed","Ahmed","Rinat","Rinat","Ahmed","Adil"));
+        System.out.println(employee3);
+
+        employee3.removeIf(p -> p.toLowerCase().contains("a") && p.toLowerCase().contains("r"));
+        System.out.println(employee3);
+
+
+
+    }
 
 
 
