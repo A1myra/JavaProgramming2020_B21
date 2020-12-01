@@ -11,17 +11,8 @@ public class CapitalOne {
         account1.getInfo();
 
         account1.deposit(100); //available: 100
-
-        account1.showBalance();
-
         account1.withdraw(80); // 20
-
-        account1.showBalance();
-
         account1.withdraw(20);
-
-        account1.showBalance();
-
         account1.deposit(10000);
 
         account1.showBalance();
@@ -34,6 +25,9 @@ public class CapitalOne {
 
         account2.deposit(200);
 
+        account1.deposit(5000);
+
+        account1.showBalance();
         account2.showBalance();
     }
 }
