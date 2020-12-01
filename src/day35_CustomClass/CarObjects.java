@@ -24,15 +24,16 @@ public class CarObjects {
         System.out.println(car3.model);
 
         Car car4 = new Car();
-        car4.setInfo("Mercedes","C300","Red",2020);
+        car4.setInfo("Mercedes","C300","Red",2020,50000);
         System.out.println(car4.brand);
         System.out.println(car4.model);
         System.out.println(car4.color);
         System.out.println(car4.year);
+        System.out.println(car4.price);
 
         //2018 Mercedes C300 Red
 
-        System.out.println(car4.year+" "+car4.brand+" "+car4.model+" "+car4.color);
+        System.out.println(car4.year+" "+car4.brand+" "+car4.model+" "+car4.color+" "+car4.price);
 
         car4.getInfo();
 
