@@ -9,7 +9,6 @@ public class BankAccount {
     public double availableBalance =0;
 
     public void setInfo(String acctName, String acctNumber){
-
         accountName=acctName;
         accountNumber=acctNumber;
     }
@@ -24,6 +23,16 @@ public class BankAccount {
 
     }
 
-    public void deposit(){}
+    public void deposit(double amount){
+        availableBalance += amount;
+    }
+
+    public void withdraw(double amount){
+        availableBalance -= amount;
+    }
+
+    public void showBalance(){
+        System.out.println("As of today "+LocalDate.now()+" your available balance is : "+availableBalance);
+    }
 
 }
