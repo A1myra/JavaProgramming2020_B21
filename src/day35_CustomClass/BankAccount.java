@@ -32,7 +32,7 @@ public class BankAccount {
     }
 
     public void showBalance(){
-        System.out.println("As of today "+LocalDate.now()+" your available balance is : "+availableBalance);
+        System.out.println("As of today "+LocalDate.now()+" "+accountName+" available balance is : $"+availableBalance);
     }
 
 }
