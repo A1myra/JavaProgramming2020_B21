@@ -32,6 +32,27 @@ public class ArrayListPractice2 {
         numbers2.removeIf(p->p<7);
         System.out.println(numbers2);
 
+        System.out.println("==========================================================");
+        ArrayList<Integer> list = new ArrayList<>();
+        list.addAll(Arrays.asList(1,2,3,4,5,6,7,8,100,200,300,400,500,12,130));
+
+        //solution 1:
+        // list.removeIf( p -> p > 100 );
+
+        //solution 2:
+        ArrayList<Integer> temp = new ArrayList<>();
+        for(int each : list){
+            if(each <= 100){
+            temp.add(each);
+        }
+        }
+
+        list = temp;
+
+        System.out.println(list);
+
+
+
 
     }
 }
