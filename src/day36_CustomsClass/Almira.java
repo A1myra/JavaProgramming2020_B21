@@ -1,5 +1,6 @@
 package day36_CustomsClass;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -49,6 +50,13 @@ public class Almira { // almira has an offer
         moreThan120k.removeIf(p->p.salary < 120000); // remove all the offers that has salary less than 120k
 
         System.out.println("Offers more than 120k : "+moreThan120k.size());
+
+        System.out.println("============================================================");
+
+        ArrayList<Offer> fullTime = new ArrayList<>(offers);
+        fullTime.removeIf(p->!p.isFullTime);
+
+        System.out.println("Full time offers : "+fullTime.size());
 
 
     }
