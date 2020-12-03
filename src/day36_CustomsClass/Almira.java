@@ -19,14 +19,37 @@ public class Almira { // almira has an offer
             offers.get(i).getInfo();
         }
 
+
         System.out.println("============================================================");
         //only print the offers from VA
 
         for(Offer each: offers) {
-            if(each.location.equals("VA") && each.salary >= 120000){
+            if(each.location.equals("VA") && each.salary >= 110000 && each.jobTitle.equals("SDET")){
                 each.getInfo();
             }
         }
+
+        System.out.println("============================================================");
+
+        ArrayList<Offer> localOffers = new ArrayList<>(offers);
+        localOffers.removeIf(p->!p.location.equals("VA")); // retain if the offer is from VA
+
+        System.out.println("VA offers: "+localOffers.size());
+
+        System.out.println("============================================================");
+
+        ArrayList<Offer> sdetOffers = new ArrayList<>(offers);
+        sdetOffers.removeIf(p->!p.jobTitle.equals("SDET")); // retain if the offer is for SDET
+
+        System.out.println("SDET offers: "+sdetOffers.size());
+
+        System.out.println("============================================================");
+
+        ArrayList<Offer> moreThan120k = new ArrayList<>(offers);
+        moreThan120k.removeIf(p->p.salary < 120000); // remove all the offers that has salary less than 120k
+
+        System.out.println("Offers more than 120k : "+moreThan120k.size());
+
 
     }
 }

@@ -21,7 +21,6 @@ public class Offer {
         System.out.println("Company: " + companyName+ "\nLocation: " + location + "\nSalary: $" + salary +
                 "\nJob Title: " + jobTitle + "\nHas Benefit: " + hasBenefit + "\nWork From Home: " + isWFH +
                 "\nHas PTO: " + hasPTO + "\nis Full time: " + isFullTime);
-        System.out.println("===========================================");
     }
 
 
