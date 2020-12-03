@@ -1,6 +1,8 @@
 package day36_CustomsClass;
 
+import java.text.DecimalFormat;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Employee {
 
@@ -20,13 +22,20 @@ public class Employee {
             this.hireDate = hireDate;
         }
 
+
         public void getInfo(){
+            DateTimeFormatter df = DateTimeFormatter.ofPattern("MMM-dd-yyyy");
+            DecimalFormat decimal = new DecimalFormat("0.00");
             System.out.println("Name: "+name+", Gender: "+gender+", ID: "+ID+", Company Name: "+companyName
-                    +", Job Title: "+jobTitle);
+                    +", Job Title: "+jobTitle+", salary: $"+decimal.format(salary)+", Hired "+hireDate.format(df));
         }
 
         public void working(){
             System.out.println(name+" is working");
+        }
+
+        public void meeting(){
+            System.out.println(name+" is in a meeting");
         }
 
 
