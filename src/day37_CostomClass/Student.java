@@ -19,16 +19,18 @@ public class Student {
         age = LocalDate.now().getYear() - DOfB.getYear();
     }
 
-    public void getInfo(){
-        System.out.println("Student name : "+ name +"\nStudent ID : "+ID +"\nGPA: "+GPA+"\nAge: "+age + "" +
-                "\nGender: "+gender);
+    public String toString(){
+        return "Name: "+name+", Gender: "+gender+", Age: "+age+", ID: "+ID+", Date Of Birth: "+DOfB+", GPA: "+GPA;
     }
 
 
-
-
-
 }
+
+
+
+
+
+
 /*
 Student:
         Attributes:
