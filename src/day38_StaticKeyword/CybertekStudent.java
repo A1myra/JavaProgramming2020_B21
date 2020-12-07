@@ -6,6 +6,13 @@ public class CybertekStudent {
     public int age, groupNumber;
     public char gender;
 
+    public  void setInfo(String name, int age, int groupNumber, char gender){
+        this.name=name;
+        this.age=age;
+        this.groupNumber=groupNumber;
+        this.gender=gender;
+    }
+
 
     public static String schoolName = "Cybertek School";
     public static boolean isOnlineStudent = true;
@@ -27,6 +34,7 @@ public class CybertekStudent {
                 ", groupNumber=" + groupNumber +
                 ", gender=" + gender +
                 ", isOnline: "+isOnlineStudent+
+                ", School Name: "+schoolName+
                 '}';
     }
 }
