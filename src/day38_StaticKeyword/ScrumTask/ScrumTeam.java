@@ -12,12 +12,11 @@ public class ScrumTeam {
     public static boolean hasSprint = true;
     public static boolean hasMeeting = true;
 
-    public void setInfo(String PO, String BA, String SM, ArrayList<Tester> testersTeam, ArrayList<Developer> developersTeam){
+    public void setInfo(String PO, String BA, String SM){
         this.PO = PO;
         this.BA = BA;
         this.SM = SM;
-        this.testersTeam = testersTeam;
-        this.developersTeam = developersTeam;
+
     }
 
     public void addTesters(Tester testers) {
