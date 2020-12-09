@@ -19,7 +19,7 @@ public class CybertekStudents {
         return "CybertekStudents{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", gender=" + gender +", School Name=" + schoolName+
+                ", gender=" + gender +", School Name=" + schoolName+", has Repl.it="+hasReplIt+", has FlipGrid="+hasFlipGrid+
                 ", dream job="+dreamJob+
                 '}';
     }
