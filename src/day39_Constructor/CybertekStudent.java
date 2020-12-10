@@ -27,6 +27,7 @@ public class CybertekStudent {
                 "name='" + name + '\'' +
                 ", gender='" + gender + '\'' +
                 ", age=" + age +
+                ", School name= "+schoolName+
                 '}';
     }
 }
