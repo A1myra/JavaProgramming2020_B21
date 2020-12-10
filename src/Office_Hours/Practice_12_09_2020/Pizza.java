@@ -13,10 +13,12 @@ public class Pizza {
 
         priceOfPizza = calcCost();
         tips= tips/100;
-        //converting tips as decimal, that is why /100
+        //converting percentage tips as decimal, that is why /100
 
         this.tips=tips * priceOfPizza;
-        totalPrice=priceOfPizza+this.tips;
+        totalPrice=priceOfPizza+this.tips ;
+        //totalPrice=priceOfPizza+this.tips + (priceOfPizza * 0.08); <=="IF I WANT TO INCLUDE 8% OF TAX"
+
     }
 
     public double calcCost(){  // method that help me to find the price of pizza
