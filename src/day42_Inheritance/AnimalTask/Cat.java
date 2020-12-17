@@ -10,4 +10,15 @@ public class Cat extends Animal {
         System.out.println(name+" is meowing");
     }
 
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "breed='" + breed + '\'' +
+                ", color='" + color + '\'' +
+                ", name='" + name + '\'' +
+                ", size='" + size + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                '}';
+    }
 }

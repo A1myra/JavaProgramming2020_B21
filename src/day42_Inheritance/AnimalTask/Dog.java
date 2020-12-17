@@ -9,6 +9,17 @@ public class Dog extends Animal {
     public void bark(){
         System.out.println(name+" is barking");
     }
+
+    public String toString() {
+        return "Dog{" +
+                "breed='" + breed + '\'' +
+                ", color='" + color + '\'' +
+                ", name='" + name + '\'' +
+                ", size='" + size + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                '}';
+    }
 }
 
 
