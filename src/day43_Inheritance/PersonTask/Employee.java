@@ -24,7 +24,7 @@ public class Employee extends Person {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
-                "hourlyRate=" + hourlyRate +
+                "hourlyRate= $" + hourlyRate +
                 ", jobTitle='" + jobTitle + '\'' +
                 ", ID='" + ID + '\'' +
                 '}';
