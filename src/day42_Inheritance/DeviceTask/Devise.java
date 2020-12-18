@@ -26,7 +26,7 @@ public class Devise {
         return "Devise{" +"deviceName='"+deviceName+'\''+
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
-                ", price=" + price +
+                ", price= $" + price +
                 '}';
     }
 
