@@ -1,6 +1,6 @@
 package day43_Inheritance.PersonTask;
 
-public class Employee extends Person {
+public class Employee extends Person { //Employee IS A person.
 
 
     public double hourlyRate;
@@ -16,6 +16,10 @@ public class Employee extends Person {
         this.hourlyRate=hourlyRate;
         this.ID=ID;
         this.jobTitle=jobTitle;
+    }
+
+    public double calcSalary(){
+        return hourlyRate * 40 * 52;
     }
 
     @Override
