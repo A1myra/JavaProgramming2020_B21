@@ -1,6 +1,7 @@
 package day43_Inheritance.RestaurantTask;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Restaurant {
 
@@ -22,5 +23,30 @@ public class Restaurant {
 
     }
 
+        public void hireServer(Server server){
+        servers.add(server);
+    }
 
-}
+        public void hireServer(Server[] servers){
+        this.servers.addAll(Arrays.asList(servers));
+
+       // for(Server each: servers){
+            //hireServer(each); //hiring each server onr by one
+        }
+
+        public void hireChef(Chef chef){
+        chefs.add(chef);
+        }
+
+        public void hireChef(Chef[] chefs){
+        this.chefs.addAll(Arrays.asList(chefs));
+        }
+
+        public void terminateEmployee (String ID){ // if only the ID is unique for each employee
+        servers.removeIf( p -> p.ID.equals(ID));
+        chefs.removeIf( p -> p.ID.equals(ID));
+        }
+
+    }
+
+
