@@ -30,3 +30,8 @@ public class Person {
                 '}';
     }
 }
+
+/*Person
+        name, age, gender
+        setInfo, eat(), sleep()
+ */
