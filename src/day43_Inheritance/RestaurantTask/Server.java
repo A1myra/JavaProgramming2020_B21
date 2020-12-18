@@ -15,4 +15,16 @@ public class Server extends Employee {
     public void cleanTable(){
         System.out.println(jobTitle+" "+name+" is cleaning table");
     }
+
+    @Override
+    public String toString() {
+        return "Server{" +
+                "hourlyRate=" + hourlyRate +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", ID='" + ID + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                '}';
+    }
 }
