@@ -18,6 +18,7 @@ public class phone extends Device {
         System.out.println(brand+" "+model+" is texting "+number);
     }
 
+
 }
 
 /*
