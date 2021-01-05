@@ -20,5 +20,9 @@ public class Walmart {
         System.out.println(samsung);
         System.out.println(nokia);
         System.out.println(huaWei);
+
+        iphone.faceTime(number);
+
+        samsung.freeze();
     }
 }
