@@ -19,5 +19,26 @@ public class MultiCatchBlock {
         }catch (RuntimeException e){
             System.out.println("Runtime Exception");
         }
+
+        System.out.println("=======================================================");
+
+        String[] names= {"Almira","Rinat","mino"};
+
+        try {
+            names[10] = "Bimbo"; //ArrayIndexOutOfBound
+        }catch (IllegalArgumentException e){
+            System.out.println("Illegal Argument Exception");
+        }catch (NoSuchElementException e){
+            System.out.println("No Such Element Exception");
+        }catch (StringIndexOutOfBoundsException e){
+            System.out.println("String Index Out Of Bounds Exception");
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("Index Out Of Bounds Exception");
+        }catch (RuntimeException e){
+            System.out.println("Runtime Exception");
+        }
+
+
     }
+
 }
