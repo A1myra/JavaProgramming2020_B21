@@ -5,7 +5,7 @@ public class Circle extends shape{
     private final static double PI = 3.14; //internal use only, so I make it private
     public double r, d;
 
-    public Circle(String name, double r, double d) {
+    public Circle(double r) {
 
         super("Circle");
         if(r <= 0){ // if radius of circle is invalid
@@ -13,6 +13,22 @@ public class Circle extends shape{
         }
         this.r = r;
         this.d = r * 2;
+    }
+
+    public double getR() {
+        return r;
+    }
+
+    public void setR(double r) {
+        this.r = r;
+    }
+
+    public double getD() {
+        return d;
+    }
+
+    public void setD(double d) {
+        this.d = d;
     }
 
     @Override
@@ -28,9 +44,11 @@ public class Circle extends shape{
     @Override
     public String toString() {
         return "Circle{" +
-                "r=" + r +
+                "name='"+name+'\''+
+                ", area="+ area()+" square cm"+
+                ", perimeter="+perimeter()+" cm"+
+                ", r=" + r +
                 ", d=" + d +
-                ", name='" + name + '\'' +
                 '}';
     }
 }
