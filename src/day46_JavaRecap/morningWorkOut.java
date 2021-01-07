@@ -4,9 +4,21 @@ public class morningWorkOut {
 
 
     public static void main(String[] args) {
-        System.out.println("Push Up");
+        for(int i=1; i <= 30; i++){
+        System.out.println("Push Up "+i);
         sleep(1.5);
+        }
+
+        System.out.println("==================================");
+
+        for(int i=1; i<=20;i++){
+            System.out.println("Pull Up "+i);
+            sleep(2.5);
+        }
     }
+
+
+
     public static void sleep(double seconds){ //2.5
                               //92.5* 1000) = 2500
         try {
