@@ -27,6 +27,14 @@ public class shape {
         return 0;
     }
 
+    @Override
+    public String toString() {
+        return "shape{" +
+                "name= " + name + ", " +
+                ", area= "+area()+
+                ", perimeter= "+perimeter()+
+                '}';
+    }
 }
 
 
