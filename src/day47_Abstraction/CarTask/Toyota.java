@@ -1,0 +1,14 @@
+package day47_Abstraction.CarTask;
+
+public class Toyota extends Car {
+
+    public Toyota(String brand, String model, String color, int year, double price) {
+        super("Toyota", model, color, year, price);
+    }
+
+    public void start(){
+        System.out.println("insert ket: twist the ket to ignition");
+    }
+
+
+}
