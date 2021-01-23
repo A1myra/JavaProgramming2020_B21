@@ -15,7 +15,6 @@ public abstract class Animal {
     }
 
     public abstract void sleep();
-    public abstract void hunt();
 
     @Override
     public String toString() {

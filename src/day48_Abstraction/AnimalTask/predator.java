@@ -1,0 +1,14 @@
+package day48_Abstraction.AnimalTask;
+
+public interface predator {
+
+     void hunt();
+
+
+}
+
+    /*
+        Interface: 100% abstraction
+        Access modifier: public only
+        methods: by default is abstract
+     */
