@@ -1,5 +1,7 @@
 package day53_Collection;
 
+import day42_Inheritance.AnimalTask.Dog;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -29,9 +31,61 @@ public class MapPractice1 {
         //employeeInfo.clear();
         //System.out.println(employeeInfo);
 
+        System.out.println("====================================================");
+
         for (String eachKey : employeeInfo.keySet()){
             System.out.println(eachKey +"  :  " +employeeInfo.get(eachKey));
         }
+
+
+        System.out.println("====================================================");
+        employeeInfo.put("mino",140000.0);
+        employeeInfo.put("emre",120002.0);
+        employeeInfo.put("riri", 50000.0);
+
+
+        double max = Double.MIN_VALUE;
+        String nameMax = "";
+
+        double min = Double.MAX_VALUE;
+        String nameMin ="";
+
+
+
+        for (String eachName : employeeInfo.keySet()) {
+            double eachSalary = employeeInfo.get(eachName);
+            if(eachSalary > max ){
+                max = eachSalary;
+                nameMax = eachName;
+            }
+
+            if(eachSalary < min){
+                min = eachSalary;
+                nameMin = eachName;
+            }
+        }
+
+        System.out.println(nameMax + " : "+max);
+        System.out.println(nameMin +" : "+min);
+
+
+        System.out.println("===================================================");
+        System.out.println(employeeInfo);
+
+        for (Double eachValue : employeeInfo.values()) {
+            System.out.println(eachValue);
+        }
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }
